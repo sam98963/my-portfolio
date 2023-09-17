@@ -1,10 +1,10 @@
 import Header from "../Header/Header"
 export default function LandingPage(){
   return(
-    <main className="h-screen w-screen bg-gradient-to-tr from-primary via-forth to-tertiary text-secondary flex flex-col">
+    <main className="lg:h-screen h-auto w-screen bg-gradient-to-tr from-primary via-forth to-tertiary text-secondary flex flex-col">
       <Header />
-      <section className="flex-grow w-full flex items-end">
-        <h1 className="text-9xl">
+      <section className="sm:flex-grow h-3/5 w-full flex items-end sm:p-15 p-10 pt-26 sm:pt-56 lg:pt-0">
+        <h1 className="sm:text-9xl text-6xl">
           A Portfolio that matters.
         </h1>
       </section>
