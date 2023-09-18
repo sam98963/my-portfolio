@@ -12,7 +12,7 @@ export default {
         tertiary: "#99b",
         forth: "#343460"
 
-      }
+      },
     },
   },
   plugins: [],
