@@ -10,9 +10,12 @@ export default {
         primary: "#22223B",
         secondary: "#FDF2F0",
         tertiary: "#99b",
-        forth: "#343460"
-
+        forth: "#343460",
+        fifth: "#4696fa"
       },
+      boxShadow: {
+        'input': '0 0 30px rgba(70, 150, 250, 0.8)',
+      }
     },
   },
   plugins: [],
