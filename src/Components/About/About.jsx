@@ -1,29 +1,29 @@
 export default function About(){
   return(
-    <main className="w-screen h-auto lg:h-screen flex md:items-center justify-center bg-gradient-to-tr from-primary via-forth to-tertiary text-white pt-10 lg:pt-0">
+    <main className="w-screen h-auto flex md:items-center justify-center bg-gradient-to-tr from-primary via-forth to-tertiary text-white pt-10 lg:pt-0">
       <section className="w-4/5 sm:h-4/5 h-3/5 flex flex-col sm:text-md text-sm">
-        <h1 className="sm:text-8xl text-6xl">About Me</h1>
+        <h1 className="md:text-8xl text-6xl">About Me</h1>
         
         
         
-        <article className="w-full sm:w-3/5 h-fit pt-6 sm:pt-16 flex flex-col sm:text-start text-center">
-        <h3 className="sm:text-3xl text-2xl sm:no-underline underline">My Skills</h3>
+        <article className="w-full sm:w-3/5 h-fit pt-6 sm:pt-10 flex flex-col sm:text-start text-center">
+        <h3 className="md:text-3xl text-2xl sm:no-underline underline">My Skills</h3>
           <section className="flex sm:flex-row flex-col">
             <p className="sm:pr-5 sm:pt-4 pt-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet lacus posuere arcu vulputate accumsan. Vestibulum congue tellus sed est bibendum, id ullamcorper nunc bibendum. Nunc egestas dapibus pharetra. Integer.</p>
             <p className="sm:px-5 sm:py-4 py-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet lacus posuere arcu vulputate accumsan. Vestibulum congue tellus sed est bibendum, id ullamcorper nunc bibendum. Nunc egestas dapibus pharetra. Integer.</p>
           </section>
         </article>
 
-        <article className="w-full sm:w-3/5 h-fit pt-6 sm:pt-16 flex flex-col self-end sm:text-end text-center">
-        <h3 className="sm:text-3xl text-2xl sm:no-underline underline">My Passions</h3>
+        <article className="w-full sm:w-3/5 h-fit pt-6 sm:pt-10 flex flex-col self-end sm:text-end text-center">
+        <h3 className="md:text-3xl text-2xl sm:no-underline underline">My Passions</h3>
           <section className="flex sm:flex-row flex-col">
             <p className="sm:px-5 sm:pt-4 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet lacus posuere arcu vulputate accumsan. Vestibulum congue tellus sed est bibendum, id ullamcorper nunc bibendum. Nunc egestas dapibus pharetra. Integer.</p>
             <p className="sm:pl-5 sm:py-4 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet lacus posuere arcu vulputate accumsan. Vestibulum congue tellus sed est bibendum, id ullamcorper nunc bibendum. Nunc egestas dapibus pharetra. Integer.</p>
           </section>
         </article>
 
-        <article className="w-full sm:w-3/5 h-fit pt-6 sm:pt-16 flex flex-col sm:text-start text-center">
-        <h3 className="sm:text-3xl text-2xl sm:no-underline underline">My Stack</h3>
+        <article className="w-full sm:w-3/4 h-fit pt-6 sm:pt-10 flex flex-col sm:text-start text-center">
+        <h3 className="md:text-3xl text-2xl sm:no-underline underline">My Stack</h3>
           <section className="flex flex-row md:text-[2.5rem] sm:text-4xl text-3xl flex-wrap pt-4 sm:justify-start justify-center">
             
           <i className="devicon-html5-plain colored pr-2 pb-5"></i>
