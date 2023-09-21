@@ -20,7 +20,7 @@ export default function Contact(){
               <FontAwesomeIcon icon={faPhone} />
             </figure>
           </article>
-          <form className="flex-1 flex flex-col px-5 items-center sm:text-lg py-10 md:pt-0">
+          <form className="flex-1 flex flex-col px-5 items-center sm:text-lg py-10 md:pt-0 w-full">
             <label className="flex flex-col w-full md:w-4/5 py-2">
               Name
               <input type="text" className="text-black rounded-sm border border-forth bg-tertiary opacity-50 h-10 mt-1 focus:outline-none focus:border-fifth focus:shadow-input"/>
