@@ -17,8 +17,8 @@ export default function About(){
         <article className="w-full sm:w-3/5 h-fit pt-6 sm:pt-10 flex flex-col self-end sm:text-end text-center">
         <h3 className="md:text-3xl text-2xl sm:no-underline underline">My Passions</h3>
           <section className="flex sm:flex-row flex-col">
-            <p className="sm:px-5 sm:pt-4 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet lacus posuere arcu vulputate accumsan. Vestibulum congue tellus sed est bibendum, id ullamcorper nunc bibendum. Nunc egestas dapibus pharetra. Integer.</p>
-            <p className="sm:pl-5 sm:py-4 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet lacus posuere arcu vulputate accumsan. Vestibulum congue tellus sed est bibendum, id ullamcorper nunc bibendum. Nunc egestas dapibus pharetra. Integer.</p>
+            <p className="sm:px-5 sm:pt-4 pt-2">Apart from parking up at my desk and typing away for a day, I love to get moving. Whether it be on walks, runs, swims, cycles or playing football, I love to get out and about!</p>
+            <p className="sm:pl-5 sm:py-4 py-2">Being creative is my other side. Whether its winging a recipe from a new cuisine or strumming away aimlessly on a guitar. It&apos;s great seeing where experimenting can can take me.</p>
           </section>
         </article>
 

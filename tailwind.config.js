@@ -15,6 +15,9 @@ export default {
       },
       boxShadow: {
         'input': '0 0 30px rgba(70, 150, 250, 0.8)',
+      },
+      blur: {
+        xs: "2px"
       }
     },
   },
