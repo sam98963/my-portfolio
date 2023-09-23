@@ -1,5 +1,4 @@
 import MightyMiniMindsImg from "../../assets/MMM.png"
-import SocPortalImg from "../../assets/Portal.png"
 import PortfolioImg from "../../assets/Portfolio.png"
 import ThreeImg from "../../assets/ThreeRedesign.png"
 import Lyra from "../../assets/Lyra.png"
