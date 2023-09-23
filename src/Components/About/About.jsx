@@ -2,7 +2,7 @@ export default function About(){
   return(
     <main className="w-screen h-auto flex md:items-center justify-center bg-gradient-to-tr from-primary via-forth to-tertiary text-white pt-10 lg:pt-0">
       <section className="w-4/5 sm:h-4/5 h-3/5 flex flex-col sm:text-md text-sm">
-        <h1 className="md:text-8xl text-6xl">About Me</h1>
+        <h1 className="md:text-8xl text-6xl text-center sm:text-start">About Me</h1>
         
         
         

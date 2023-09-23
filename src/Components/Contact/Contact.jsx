@@ -7,13 +7,13 @@ export default function Contact(){
   return(
     <main className="w-screen h-auto sm:h-screen flex md:items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary text-white pt-10 lg:pt-0">
       <section className="w-4/5 sm:h-4/5 h-3/5 flex flex-col sm:text-md text-sm">
-        <h1 className="sm:text-8xl text-6xl">Contact Me</h1>
+        <h1 className="sm:text-8xl text-6xl text-center sm:text-start">Contact Me</h1>
         <section className="h-4/5 w-full flex flex-col md:flex-row sm:items-center pt-10">
-          <article className="flex-1 sm:px-5 flex flex-col sm:items-center text-start">
+          <article className="flex-1 lg:px-5 flex flex-col items-center text-start">
             <div>
-            <h3 className=" text-2xl sm:text-4xl md:text-5xl">Lets build something unforgettable <span className="block text-4xl sm:text-6xl md:text-8xl border-b-4 border-white w-fit">together.</span></h3>
+            <h3 className=" text-2xl sm:text-4xl md:text-5xl text-center sm:text-start flex flex-col items-center sm:items-start">Lets build something unforgettable <span className="block text-4xl sm:text-6xl md:text-8xl border-b-4 border-white w-fit">together.</span></h3>
             </div>
-            <figure className="sm:self-start mt-5 pt-2 sm:text-2xl text-xl md:text-3xl flex justify-between w-2/5">
+            <figure className="sm:self-start mt-5 pt-2 sm:text-2xl text-lg md:text-3xl flex justify-between w-2/5">
               <i className="devicon-linkedin-plain"></i>
               <i className="devicon-twitter-original"></i>
               <FontAwesomeIcon icon={faEnvelope} />
