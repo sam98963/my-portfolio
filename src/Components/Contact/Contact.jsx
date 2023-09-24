@@ -34,7 +34,8 @@ export default function Contact(){
         body: JSON.stringify(mail)
       })
       if (response.ok) {
-        console.log(response); // Do something with the parsed data
+        const responseData = await response.json();
+        console.log(responseData); // Do something with the parsed data
       } else {
         console.error('Request failed:', response.status, response.statusText);
       }
