@@ -3,7 +3,46 @@ import {
   faEnvelope,
   faPhone
 } from "@fortawesome/free-solid-svg-icons";
+import {useState} from "react"
 export default function Contact(){
+
+  const [emailData, setEmailData] = useState({
+    fromName: "",
+    fromEmail: "",
+    fromMessage: ""
+  });
+  // function to handle input changes
+  function handleInputChange(event) {
+    const { name, value } = event.target; // name is the name of the input, value is the value of the input
+    setEmailData((prevState) => ({ ...prevState, [name]: value })); // set the state of the form data to the new value of the input
+  }
+
+  async function handleSendEmail(event){
+    console.log("email attempt")
+    event.preventDefault();
+    const mail = {
+      fromName: emailData.fromName,
+      fromEmail: emailData.fromEmail,
+      fromMessage: emailData.fromMessage,
+    }
+      console.log("fetch attempt")
+      const response = await fetch("http://localhost:8080/contact", {
+        method: 'POST',
+        headers: {
+          "Content-Type" : "application/json"
+        },
+        body: JSON.stringify(mail)
+      })
+      if (response.ok) {
+        console.log(response); // Do something with the parsed data
+      } else {
+        console.error('Request failed:', response.status, response.statusText);
+      }
+    }
+
+
+
+
   return(
     <main className="w-screen h-auto sm:h-screen flex md:items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary text-white pt-10 lg:pt-0">
       <section className="w-4/5 sm:h-4/5 h-3/5 flex flex-col sm:text-md text-sm">
@@ -23,17 +62,17 @@ export default function Contact(){
           <form className="flex-1 flex flex-col px-5 items-center sm:text-lg py-10 md:pt-0 w-full">
             <label className="flex flex-col w-full md:w-4/5 py-2">
               Name
-              <input type="text" className="text-black rounded-sm border border-forth bg-tertiary opacity-50 h-10 mt-1 focus:outline-none focus:border-fifth focus:shadow-input"/>
+              <input type="text" name="fromName" onChange={handleInputChange} className="text-black rounded-sm border border-forth bg-tertiary opacity-50 h-10 mt-1 focus:outline-none focus:border-fifth focus:shadow-input"/>
             </label>
             <label className="flex flex-col w-full md:w-4/5 py-2">
               Email
-              <input type="text" className="text-black rounded-sm border border-forth bg-tertiary opacity-50 h-10 mt-1 focus:outline-none focus:border-fifth focus:shadow-input"/>
+              <input type="text" name="fromEmail" onChange={handleInputChange} className="text-black rounded-sm border border-forth bg-tertiary opacity-50 h-10 mt-1 focus:outline-none focus:border-fifth focus:shadow-input"/>
             </label>
             <label className="flex flex-col w-full md:w-4/5 py-2">
               Message
-              <textarea type="text-area" className="text-black rounded-sm border border-forth bg-tertiary opacity-50 h-20 mt-1 focus:outline-none focus:border-fifth focus:shadow-input"/>
+              <textarea type="text-area" name="fromMessage" onChange={handleInputChange} className="text-black rounded-sm border border-forth bg-tertiary opacity-50 h-20 mt-1 focus:outline-none focus:border-fifth focus:shadow-input"/>
             </label>
-            <button className="w-full md:w-4/5 bg-forth rounded-sm mt-2 py-3">Submit</button>
+            <button onClick={handleSendEmail} className="w-full md:w-4/5 bg-forth rounded-sm mt-2 py-3">Submit</button>
           </form>
         </section>
       </section>
