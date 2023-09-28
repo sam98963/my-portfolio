@@ -11,18 +11,18 @@ export default function Contact(){
     fromEmail: "",
     fromMessage: ""
   });
-  // function to handle input changes
+
   function handleInputChange(event) {
-    const { name, value } = event.target; // name is the name of the input, value is the value of the input
-    setEmailData((prevState) => ({ ...prevState, [name]: value })); // set the state of the form data to the new value of the input
+    const { name, value } = event.target;
+    setEmailData((prevState) => ({ ...prevState, [name]: value }));
   }
 
   async function handleSendEmail(event){
     console.log("email attempt")
     event.preventDefault();
     const mail = {
-      fromName: emailData.fromName,
       fromEmail: emailData.fromEmail,
+      fromName: emailData.fromName,
       fromMessage: emailData.fromMessage,
     }
       console.log("fetch attempt")
@@ -35,7 +35,7 @@ export default function Contact(){
       })
       if (response.ok) {
         const responseData = await response.json();
-        console.log(responseData); // Do something with the parsed data
+        console.log(responseData);
       } else {
         console.error('Request failed:', response.status, response.statusText);
       }
