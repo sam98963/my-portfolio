@@ -26,7 +26,7 @@ export default function Contact(){
       fromMessage: emailData.fromMessage,
     }
       console.log("fetch attempt")
-      const response = await fetch("http://localhost:8080/contact", {
+      const response = await fetch("https://wilzo-portfolio-server.onrender.com/contact", {
         method: 'POST',
         headers: {
           "Content-Type" : "application/json"
