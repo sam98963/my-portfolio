@@ -13,27 +13,35 @@ export default function Collage(){
         setProjectDetails({
           title: "Lyra Strings",
           siteLink: "Lyra Site",
-          repoLink: "Lyra Repo"
+          siteUrl: "",
+          repoLink: "Lyra Repo",
+          repoUrl: ""
         });
         break;
       case "Portfolio":
         setProjectDetails({
           title: "This Portfolio",
-          repoLink: "Portfolio Repo"
+          repoLink: "Portfolio Repo",
+          repoUrl: "https://github.com/sam98963/my-portfolio"
         });
         break;
       case "Three":
         setProjectDetails({
           title: "Three Login Page Redesign",
           siteLink: "Three Redesign Site",
-          repoLink: "Three Redesign Repo"
+          siteUrl: "https://three-login-redesign.netlify.app/",
+          repoLink: "Three Redesign Repo",
+          repoUrl: "https://github.com/sam98963/Three_Login_Redesign"
         });
         break;
       case "MMM":
         setProjectDetails({
           title: "Mighty Mini Minds",
           siteLink: "Mighty Mini Minds Site",
-          repoLink: "Mighty Mini Minds Repo"
+          siteUrl: "https://migthyminiminds.netlify.app/",
+          repoLink: "Mighty Mini Minds Repo",
+          repoUrl: "https://github.com/sam98963/mighty_mini_minds"
+
         });
         break;
     }

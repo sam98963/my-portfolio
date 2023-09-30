@@ -12,11 +12,11 @@ export default function ProjectsModal({visibility, handleOffHover, projectDetail
         <div className="flex flex-row w-4/5 self-end justify-end items-center">
          
          {projectDetails.repoLink? <p className="ml-4 underline cursor-pointer">
-          <a>{projectDetails.repoLink}<FontAwesomeIcon className="text-sm underline ml-1" icon={faArrowUpRightFromSquare} /></a>
+          <a href={projectDetails.repoUrl} rel="noreferrer" target="_blank">{projectDetails.repoLink}<FontAwesomeIcon className="text-sm underline ml-1" icon={faArrowUpRightFromSquare} /></a>
           </p> : null}
           
           {projectDetails.siteLink? <p className="ml-4 underline cursor-pointer">
-          <a>{projectDetails.siteLink}<FontAwesomeIcon className="text-sm underline ml-1" icon={faArrowUpRightFromSquare} /></a>
+          <a href={projectDetails.siteUrl} rel="noreferrer" target="_blank">{projectDetails.siteLink}<FontAwesomeIcon className="text-sm underline ml-1" icon={faArrowUpRightFromSquare} /></a>
           </p> : null}
         </div>
       </article>
