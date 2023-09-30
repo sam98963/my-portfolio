@@ -18,6 +18,12 @@ export default {
       },
       blur: {
         xs: "2px"
+      },
+      transition: {
+        "fadeIn" : "opacity 200ms ease"
+      },
+      rotate:{
+        "24": "24deg"
       }
     },
   },

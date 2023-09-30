@@ -19,7 +19,7 @@ export default function Collage(){
       case "Portfolio":
         setProjectDetails({
           title: "This Portfolio",
-          repoLink: "Portfolio Link"
+          repoLink: "Portfolio Repo"
         });
         break;
       case "Three":
@@ -46,7 +46,7 @@ export default function Collage(){
   return(
   <main  className="w-screen h-auto lg:h-screen flex items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary" >
       <section className="w-4/5 h-4/5 overflow-hidden rounded-2xl relative">
-        <figure className="h-full w-full rotate-12 scale-150 cursor-pointer ">
+        <figure className="h-full w-full rotate-12 scale-150">
        <ProjectsModal projectDetails = {projectDetails} visibility = {modalHidden} handleOffHover = {handleOffHover}/>
          <div className="h-1/2 lg:w-full w-1/2 flex">
            <img src={Lyra} onMouseEnter = {()=>handleOnHover("Lyra")}
