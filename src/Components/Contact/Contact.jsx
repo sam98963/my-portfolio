@@ -45,7 +45,7 @@ export default function Contact(){
 
 
   return(
-    <main className="w-screen h-auto sm:h-screen flex md:items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary text-white pt-10 lg:pt-0">
+    <main id="contact" className="w-screen h-auto sm:h-screen flex md:items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary text-white pt-10 lg:pt-0">
       <section className="w-4/5 sm:h-4/5 h-3/5 flex flex-col sm:text-md text-sm">
         <h1 className="sm:text-8xl text-6xl text-center sm:text-start">Contact Me</h1>
         <section className="h-4/5 w-full flex flex-col md:flex-row sm:items-center pt-10">

@@ -52,7 +52,7 @@ export default function Collage(){
     setModalHidden("hidden")
   }
   return(
-  <main  className="w-screen h-auto lg:h-screen flex items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary" >
+  <main id="projects" className="w-screen h-auto lg:h-screen flex items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary" >
       <section className="w-4/5 h-4/5 overflow-hidden rounded-2xl relative">
         <figure className="h-full w-full rotate-12 scale-150">
        <ProjectsModal projectDetails = {projectDetails} visibility = {modalHidden} handleOffHover = {handleOffHover}/>

@@ -5,7 +5,7 @@ export default function Header() {
       <div className="h-full flex w-3/5 sm:w-2/5 items-end justify-around mb-10 lg:text-2xl sm:text-xl text-sm xs:text-md">
         <p className="relative group">
           <a
-            href="#"
+            href="#projects"
             className="hover:text-fifth transition-colors duration-300 ease-in-out"
           >
             Projects
@@ -14,7 +14,7 @@ export default function Header() {
         </p>
         <p className="relative group">
           <a
-            href="#"
+            href="#about"
             className="hover:text-fifth transition-colors duration-300 ease-in-out"
           >
             About
@@ -23,7 +23,7 @@ export default function Header() {
         </p>
         <p className="relative group">
           <a
-            href="#"
+            href="#contact"
             className="hover:text-fifth transition-colors duration-300 ease-in-out"
           >
             Contact
