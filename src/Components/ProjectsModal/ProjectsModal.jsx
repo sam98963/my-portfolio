@@ -7,7 +7,7 @@ export default function ProjectsModal({visibility, projectDetails, setModalHidde
     function handleModalClose(){
       setModalHidden("hidden")
     }
-    let modalClass = `fixed inset-0 flex items-center justify-center bg-forth transition-fadeIn bg-opacity-90 w-full h-full z-20 ${visibility}`
+    let modalClass = `fixed inset-0 flex items-center justify-center bg-forth transition-fadeIn bg-opacity-95 w-full h-full z-20 ${visibility}`
   return(
     <section className={modalClass}>
       <article className=" flex flex-col text-end relative">

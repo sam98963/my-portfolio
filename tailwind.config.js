@@ -17,7 +17,7 @@ export default {
         'input': '0 0 12px rgba(70, 150, 250, 0.8)',
       },
       dropShadow: {
-        "input": '0 0 8px rgba(70, 150, 250, 0.8)',
+        "input": '0 0 8px rgba(70, 150, 250, 0.6)',
       },
       blur: {
         xs: "2px"
