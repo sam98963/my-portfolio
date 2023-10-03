@@ -14,7 +14,10 @@ export default {
         fifth: "#4696fa"
       },
       boxShadow: {
-        'input': '0 0 30px rgba(70, 150, 250, 0.8)',
+        'input': '0 0 12px rgba(70, 150, 250, 0.8)',
+      },
+      dropShadow: {
+        "input": '0 0 8px rgba(70, 150, 250, 0.8)',
       },
       blur: {
         xs: "2px"
@@ -24,6 +27,11 @@ export default {
       },
       rotate:{
         "24": "24deg"
+      },
+      fontSize: {
+        "2xs": "0.75rem",
+        "3xs": "0.625rem",
+        "4xs": "0.5rem"
       }
     },
   },
