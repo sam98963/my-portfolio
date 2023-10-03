@@ -23,37 +23,37 @@ export default function About(){
           <h3 className="md:text-3xl text-2xl sm:no-underline underline">My Stack</h3>
             <section className="flex flex-row md:text-[2.5rem] sm:text-4xl text-3xl flex-wrap pt-4 sm:justify-start justify-center">
               
-            <i className="devicon-html5-plain colored pr-2 pb-5"></i>
+            <i className="devicon-html5-plain colored pr-2 pb-5 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-css3-plain colored pr-2"></i>
+            <i className="devicon-css3-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-javascript-plain colored pr-2"></i>
+            <i className="devicon-javascript-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-typescript-plain colored pr-2"></i>
+            <i className="devicon-typescript-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
           
-            <i className="devicon-java-plain colored pr-2 pb-5"></i>
+            <i className="devicon-java-plain colored pr-2 pb-5 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-postgresql-plain colored pr-2"></i>
+            <i className="devicon-postgresql-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-react-original colored pr-2"></i>
+            <i className="devicon-react-original colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-nodejs-plain colored pr-2"></i>
+            <i className="devicon-nodejs-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-express-original pr-2 pb-5"></i>
+            <i className="devicon-express-original pr-2 pb-5 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-git-plain colored pr-2"></i>
+            <i className="devicon-git-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-github-original pr-2"></i>
+            <i className="devicon-github-original pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-figma-plain colored pr-2 "></i>
+            <i className="devicon-figma-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-trello-plain colored pr-2"></i>
+            <i className="devicon-trello-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-jest-plain colored pr-2"></i>
+            <i className="devicon-jest-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
-            <i className="devicon-mocha-plain colored pr-2"></i>
+            <i className="devicon-mocha-plain colored pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
 
-            <i className="devicon-unrealengine-original pr-2"></i>
+            <i className="devicon-unrealengine-original pr-2 transform scale-100 hover:scale-110 transition-transform duration-200"></i>
             
             </section>
           </article>
