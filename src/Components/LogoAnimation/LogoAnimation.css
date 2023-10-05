@@ -1,0 +1,53 @@
+#goggles, #guitar, #games {
+  position: absolute;
+  width: 20px; /* Adjust this value to control the size of the rotating elements */
+  height: 20px; /* Adjust this value to control the size of the rotating elements */
+  background-color: white;
+  border-radius: 50%;
+}
+
+#goggles {
+  animation: goggles 8s linear infinite ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(65px) rotate(0deg);
+}
+
+#guitar {
+  animation: guitar 8s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(120deg) translateX(65px) rotate(-120deg);
+}
+
+#games {
+  animation: games 8s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(240deg) translateX(65px) rotate(-240deg);
+}
+
+@keyframes guitar {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(65px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(65px) rotate(-360deg);
+  }
+}
+@keyframes goggles {
+  0% {
+    transform: translate(-50%, -50%) rotate(-240deg) translateX(65px) rotate(240deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(120deg) translateX(65px) rotate(-120deg);
+  }
+}
+@keyframes games {
+  0% {
+    transform: translate(-50%, -50%) rotate(-120deg) translateX(65px) rotate(120deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(240deg) translateX(65px) rotate(-240deg);
+  }
+}
