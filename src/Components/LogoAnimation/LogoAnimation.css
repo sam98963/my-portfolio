@@ -2,6 +2,7 @@
   background-image: url("../../assets/Logo/shadesFace.png");
   background-size: cover;
   background-position: center center;
+  --translate-x: 65px;
 }
 
 
@@ -18,7 +19,6 @@
   animation: goggles 9s linear infinite ;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg) translateX(65px) rotate(0deg);
 }
 
 #guitar {
@@ -28,7 +28,6 @@
   animation: guitar 9s linear infinite;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(120deg) translateX(65px) rotate(-120deg);
 }
 
 #football {
@@ -38,7 +37,6 @@
   animation: football 9s linear infinite;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(240deg) translateX(65px) rotate(-240deg);
 }
 
 #trumpet {
@@ -48,7 +46,6 @@
   animation: trumpet 9s linear infinite;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(240deg) translateX(65px) rotate(-240deg);
 }
 
 #bike {
@@ -58,46 +55,55 @@
   animation: bike 9s linear infinite;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(240deg) translateX(65px) rotate(-240deg);
 }
 
 @keyframes guitar {
   0% {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(65px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg) translateX(var(--translate-x)) rotate(0deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(65px) rotate(-360deg);
+    transform: translate(-50%, -50%) rotate(360deg) translateX(var(--translate-x)) rotate(-360deg);
   }
 }
 @keyframes goggles {
   0% {
-    transform: translate(-50%, -50%) rotate(-72deg) translateX(65px) rotate(72deg);
+    transform: translate(-50%, -50%) rotate(-72deg) translateX(var(--translate-x)) rotate(72deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(288deg) translateX(65px) rotate(-288deg);
+    transform: translate(-50%, -50%) rotate(288deg) translateX(var(--translate-x)) rotate(-288deg);
   }
 }
 @keyframes football {
   0% {
-    transform: translate(-50%, -50%) rotate(-144deg) translateX(65px) rotate(144deg);
+    transform: translate(-50%, -50%) rotate(-144deg) translateX(var(--translate-x)) rotate(144deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(216deg) translateX(65px) rotate(-216deg);
+    transform: translate(-50%, -50%) rotate(216deg) translateX(var(--translate-x)) rotate(-216deg);
   }
 }
 @keyframes trumpet {
   0% {
-    transform: translate(-50%, -50%) rotate(-216deg) translateX(65px) rotate(216deg);
+    transform: translate(-50%, -50%) rotate(-216deg) translateX(var(--translate-x))  rotate(216deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(144deg) translateX(65px) rotate(-144deg);
+    transform: translate(-50%, -50%) rotate(144deg) translateX(var(--translate-x)) rotate(-144deg);
   }
 }
 @keyframes bike {
   0% {
-    transform: translate(-50%, -50%) rotate(-288deg) translateX(65px) rotate(288deg);
+    transform: translate(-50%, -50%) rotate(-288deg) translateX(var(--translate-x)) rotate(288deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(72deg) translateX(65px) rotate(-72deg);
+    transform: translate(-50%, -50%) rotate(72deg) translateX(var(--translate-x))rotate(-72deg);
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #avatar {
+    background-image: url("../../assets/Logo/shadesFace.png");
+    background-size: cover;
+    background-position: center center;
+    --translate-x: 40px;
   }
 }
