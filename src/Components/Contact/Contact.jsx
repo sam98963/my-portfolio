@@ -1,3 +1,4 @@
+import "./Contact.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faEnvelope,
@@ -6,7 +7,9 @@ import {
 import {useState} from "react"
 import FormSubmitModal from "../FormSubmitModal/FormSubmitModal";
 export default function Contact(){
-  const [isModalVisible, setIsModalVisible] = useState(true);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+
 
   const [emailData, setEmailData] = useState({
     fromName: "",
@@ -36,8 +39,6 @@ export default function Contact(){
         body: JSON.stringify(mail)
       })
       if (response.ok) {
-        // const responseData = await response.json();
-        // console.log(responseData);
         setIsModalVisible(true);
       } else {
         console.error('Request failed:', response.status, response.statusText);
@@ -59,10 +60,10 @@ export default function Contact(){
             <h3 className=" text-2xl sm:text-4xl md:text-5xl text-center sm:text-start flex flex-col items-center sm:items-start">Lets build something unforgettable <span className="block text-4xl sm:text-6xl md:text-8xl border-b-4 border-white w-fit">together.</span></h3>
             </div>
             <figure className="sm:self-start mt-5 pt-2 sm:text-2xl text-lg md:text-3xl items-center flex justify-between w-2/5">
-            <a href="https://www.linkedin.com/in/samwilliamson2918/" rel="noreferrer" target="_blank"><i className="devicon-linkedin-plain"></i></a>
-              <a href = "https://twitter.com/WilzoCodes" rel="noreferrer" target="_blank"><i className="devicon-twitter-original"></i></a>
-              <a href = "mailto: wilzocodes01@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
-              <a href = "tel:+447580367311"><FontAwesomeIcon icon={faPhone} /></a>
+            <a href="https://www.linkedin.com/in/samwilliamson2918/" rel="noreferrer" target="_blank" className="transform scale-100 hover:scale-110 transition-transform duration-200"><i className="devicon-linkedin-plain"></i></a>
+              <a href = "https://twitter.com/WilzoCodes" rel="noreferrer" target="_blank" className="transform scale-100 hover:scale-110 transition-transform duration-200"><i className="devicon-twitter-original"></i></a>
+              <a href = "mailto: wilzocodes01@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="transform scale-100 hover:scale-110 transition-transform duration-200"/></a>
+              <a href = "tel:+447580367311"><FontAwesomeIcon icon={faPhone} className="transform scale-100 hover:scale-110 transition-transform duration-200" /></a>
             </figure>
           </article>
           <form className="flex-1 flex flex-col px-5 items-center sm:text-lg py-10 md:pt-0 w-full">
@@ -78,7 +79,7 @@ export default function Contact(){
               Message
               <textarea type="text-area" name="fromMessage" onChange={handleInputChange} className="text-black rounded-sm border border-forth bg-tertiary opacity-50 h-20 mt-1 focus:outline-none focus:border-fifth focus:shadow-input"/>
             </label>
-            <button onClick={handleSendEmail} className="w-full md:w-4/5 bg-forth rounded-sm mt-2 py-3">Submit</button>
+            <button onClick={handleSendEmail} className="btn w-full md:w-4/5 bg-white rounded-sm mt-2 py-3 rounded-xl relative flex items-center justify-center"><span>Submit</span></button>
           </form>
         </section>
       </section>

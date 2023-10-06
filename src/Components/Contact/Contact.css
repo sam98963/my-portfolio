@@ -1,0 +1,42 @@
+.btn{
+  transition: transform 0.1s;
+  overflow: hidden;
+  box-shadow: 1px 1px 20px 1px rgba(70, 150, 250, 0.6);
+  transition: box-shadow 0.8s ease;
+}
+
+.btn:hover{
+  box-shadow: 5px 5px 40px 5px rgba(70, 150, 250, 0.9);
+}
+
+.btn span{
+ position: relative;
+ pointer-events: none;
+ color: #4696fa;
+ transition: 0.5s;
+}
+
+.btn:hover span{
+  color: #f5efff;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  transform: translate(-50%,-50%);
+  background: var(--clr, #4696fa);
+  width: 0;
+  height: 0;
+  transition: 0.8s, left 0s, top 0s;
+}
+
+.btn:hover::before{
+    width: 80%;
+    height: 100%;
+    border-radius: 1.5rem;
+}
+
+.btn:hover {
+}

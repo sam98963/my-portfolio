@@ -15,6 +15,8 @@ export default {
       },
       boxShadow: {
         'input': '0 0 12px rgba(70, 150, 250, 0.8)',
+        'button': '1px 1px 20px 1px rgba(70, 150, 250, 0.6)',
+        'button-hover': '1px 1px 30px 1px rgba(70, 150, 250, 0.8)'
       },
       dropShadow: {
         "input": '0 0 8px rgba(70, 150, 250, 0.6)',
