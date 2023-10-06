@@ -4,7 +4,9 @@ import {
   faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import {useState} from "react"
+import FormSubmitModal from "../FormSubmitModal/FormSubmitModal";
 export default function Contact(){
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const [emailData, setEmailData] = useState({
     fromName: "",
@@ -18,14 +20,14 @@ export default function Contact(){
   }
 
   async function handleSendEmail(event){
-    console.log("email attempt")
+    // console.log("email attempt")
     event.preventDefault();
     const mail = {
       fromEmail: emailData.fromEmail,
       fromName: emailData.fromName,
       fromMessage: emailData.fromMessage,
     }
-      console.log("fetch attempt")
+      // console.log("fetch attempt")
       const response = await fetch("https://wilzo-portfolio-server.onrender.com/contact", {
         method: 'POST',
         headers: {
@@ -34,8 +36,9 @@ export default function Contact(){
         body: JSON.stringify(mail)
       })
       if (response.ok) {
-        const responseData = await response.json();
-        console.log(responseData);
+        // const responseData = await response.json();
+        // console.log(responseData);
+        setIsModalVisible(true);
       } else {
         console.error('Request failed:', response.status, response.statusText);
       }
@@ -45,7 +48,9 @@ export default function Contact(){
 
 
   return(
-    <main id="contact" className="w-screen h-auto sm:h-screen flex md:items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary text-white pt-10 lg:pt-0">
+    <>
+    <main id="contact" className="w-screen h-auto sm:h-screen flex md:items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary text-white pt-10 lg:pt-0 relative">
+    <FormSubmitModal setIsModalVisible={setIsModalVisible} isModalVisible={isModalVisible}/>
       <section className="w-4/5 sm:h-4/5 h-3/5 flex flex-col sm:text-md text-sm">
         <h1 className="sm:text-8xl text-6xl text-center sm:text-start">Contact Me</h1>
         <section className="h-4/5 w-full flex flex-col md:flex-row sm:items-center pt-10">
@@ -78,5 +83,6 @@ export default function Contact(){
         </section>
       </section>
     </main>
+    </>
   )
 }
