@@ -6,7 +6,7 @@ import {
 import {useState} from "react"
 import FormSubmitModal from "../FormSubmitModal/FormSubmitModal";
 export default function Contact(){
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(true);
 
   const [emailData, setEmailData] = useState({
     fromName: "",
