@@ -53,11 +53,11 @@ export default function Contact(){
             <div>
             <h3 className=" text-2xl sm:text-4xl md:text-5xl text-center sm:text-start flex flex-col items-center sm:items-start">Lets build something unforgettable <span className="block text-4xl sm:text-6xl md:text-8xl border-b-4 border-white w-fit">together.</span></h3>
             </div>
-            <figure className="sm:self-start mt-5 pt-2 sm:text-2xl text-lg md:text-3xl flex justify-between w-2/5">
-              <i className="devicon-linkedin-plain"></i>
-              <i className="devicon-twitter-original"></i>
-              <FontAwesomeIcon icon={faEnvelope} />
-              <FontAwesomeIcon icon={faPhone} />
+            <figure className="sm:self-start mt-5 pt-2 sm:text-2xl text-lg md:text-3xl items-center flex justify-between w-2/5">
+            <a href="https://www.linkedin.com/in/samwilliamson2918/" rel="noreferrer" target="_blank"><i className="devicon-linkedin-plain"></i></a>
+              <a href = "https://twitter.com/WilzoCodes" rel="noreferrer" target="_blank"><i className="devicon-twitter-original"></i></a>
+              <a href = "mailto: wilzocodes01@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
+              <a href = "tel:+447580367311"><FontAwesomeIcon icon={faPhone} /></a>
             </figure>
           </article>
           <form className="flex-1 flex flex-col px-5 items-center sm:text-lg py-10 md:pt-0 w-full">
