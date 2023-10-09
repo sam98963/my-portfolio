@@ -6,71 +6,84 @@
   --spin-time: 15s;
   --width: 6rem;
   --height: 6rem;
+  
 }
 
 
 
-#goggles, #guitar, #football, #trumpet, #bike {
+#html, #css, #javascript, #typescript, #react, #java, #spring, #express, #postgresql, #git, #github, #jest, #mocha, #figma {
   position: absolute;
   border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  top: 50%;
+  left: 50%;
+  width: var(--width);
+  height: var(--height);
 }
 
-#goggles {
+#html {
   background-image: url("../../assets/Logo/OrbitItems/goggles.PNG");
-  background-size: cover;
-  background-position: center center;
-  animation: goggles var(--spin-time) linear infinite ;
-  top: 50%;
-  left: 50%;
-  width: var(--width);
-  height: var(--height);
+  animation: html var(--spin-time) linear infinite ;
 }
 
-#guitar {
+#css {
   background-image: url("../../assets/Logo/OrbitItems/guitar.PNG");
-  background-size: cover;
-  background-position: center center;
-  animation: guitar var(--spin-time) linear infinite;
-  top: 50%;
-  left: 50%;
-  width: var(--width);
-  height: var(--height);
+  animation: css var(--spin-time) linear infinite;
 }
 
-#football {
+#javascript {
   background-image: url("../../assets/Logo/OrbitItems/football.PNG");
-  background-size: cover;
-  background-position: center center;
-  animation: football var(--spin-time) linear infinite;
-  top: 50%;
-  left: 50%;
-  width: var(--width);
-  height: var(--height);
+  animation: javascript var(--spin-time) linear infinite;
 }
 
-#trumpet {
+#typescript {
   background-image: url("../../assets/Logo/OrbitItems/trumpet.png");
-  background-size: cover;
-  background-position: center center;
-  animation: trumpet var(--spin-time) linear infinite;
-  top: 50%;
-  left: 50%;
-  width: var(--width);
-  height: var(--height);
+  animation: typescript var(--spin-time) linear infinite;
 }
 
-#bike {
+#react {
   background-image: url("../../assets/Logo/OrbitItems/bike.png");
-  background-size: cover;
-  background-position: center center;
-  animation: bike var(--spin-time) linear infinite;
-  top: 50%;
-  left: 50%;
-  width: var(--width);
-  height: var(--height);
+  animation: react var(--spin-time) linear infinite;
+}
+#java {
+  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  animation: java var(--spin-time) linear infinite;
+}
+#spring {
+  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  animation: spring var(--spin-time) linear infinite;
+}
+#express {
+  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  animation: express var(--spin-time) linear infinite;
+}
+#postgresql {
+  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  animation: postgresql var(--spin-time) linear infinite;
+}
+#git {
+  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  animation: git var(--spin-time) linear infinite;
+}
+#github {
+  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  animation: github var(--spin-time) linear infinite;
+}
+#jest {
+  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  animation: jest var(--spin-time) linear infinite;
+}
+#mocha {
+  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  animation: mocha var(--spin-time) linear infinite;
+}
+#figma {
+  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  animation: figma var(--spin-time) linear infinite;
 }
 
-@keyframes guitar {
+@keyframes html {
   0% {
     transform: translate(-50%, -50%) rotate(0deg) translateX(var(--translate-x)) rotate(0deg);
   }
@@ -78,36 +91,108 @@
     transform: translate(-50%, -50%) rotate(360deg) translateX(var(--translate-x)) rotate(-360deg);
   }
 }
-@keyframes goggles {
+@keyframes css {
   0% {
-    transform: translate(-50%, -50%) rotate(-72deg) translateX(var(--translate-x)) rotate(72deg);
+    transform: translate(-50%, -50%) rotate(-25.5deg) translateX(var(--translate-x)) rotate(25.5deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(288deg) translateX(var(--translate-x)) rotate(-288deg);
+    transform: translate(-50%, -50%) rotate(333.5deg) translateX(var(--translate-x)) rotate(-333.5deg);
   }
 }
-@keyframes football {
+@keyframes javascript {
   0% {
-    transform: translate(-50%, -50%) rotate(-144deg) translateX(var(--translate-x)) rotate(144deg);
+    transform: translate(-50%, -50%) rotate(-51deg) translateX(var(--translate-x)) rotate(51deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(216deg) translateX(var(--translate-x)) rotate(-216deg);
+    transform: translate(-50%, -50%) rotate(309deg) translateX(var(--translate-x)) rotate(-309deg);
   }
 }
-@keyframes trumpet {
+@keyframes typescript {
   0% {
-    transform: translate(-50%, -50%) rotate(-216deg) translateX(var(--translate-x))  rotate(216deg);
+    transform: translate(-50%, -50%) rotate(-76.5deg) translateX(var(--translate-x))  rotate(76.5deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(144deg) translateX(var(--translate-x)) rotate(-144deg);
+    transform: translate(-50%, -50%) rotate(283.5deg) translateX(var(--translate-x)) rotate(-283.5deg);
   }
 }
-@keyframes bike {
+@keyframes react {
   0% {
-    transform: translate(-50%, -50%) rotate(-288deg) translateX(var(--translate-x)) rotate(288deg);
+    transform: translate(-50%, -50%) rotate(-102deg) translateX(var(--translate-x)) rotate(102deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(72deg) translateX(var(--translate-x))rotate(-72deg);
+    transform: translate(-50%, -50%) rotate(258deg) translateX(var(--translate-x))rotate(-258deg);
+  }
+}
+@keyframes java {
+  0% {
+    transform: translate(-50%, -50%) rotate(-127.5deg) translateX(var(--translate-x)) rotate(127.5deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(232.5deg) translateX(var(--translate-x))rotate(-232.5deg);
+  }
+}
+@keyframes spring {
+  0% {
+    transform: translate(-50%, -50%) rotate(-153deg) translateX(var(--translate-x)) rotate(153deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(207deg) translateX(var(--translate-x))rotate(-207deg);
+  }
+}
+@keyframes express {
+  0% {
+    transform: translate(-50%, -50%) rotate(-178.5deg) translateX(var(--translate-x)) rotate(178.5deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(181.5deg) translateX(var(--translate-x))rotate(-181.5deg);
+  }
+}
+@keyframes postgresql {
+  0% {
+    transform: translate(-50%, -50%) rotate(-204deg) translateX(var(--translate-x)) rotate(204deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(156deg) translateX(var(--translate-x))rotate(-156deg);
+  }
+}
+@keyframes git {
+  0% {
+    transform: translate(-50%, -50%) rotate(-229.5deg) translateX(var(--translate-x)) rotate(229.5deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(130.5deg) translateX(var(--translate-x))rotate(-130.5deg);
+  }
+}
+@keyframes github {
+  0% {
+    transform: translate(-50%, -50%) rotate(-255deg) translateX(var(--translate-x)) rotate(255deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(105deg) translateX(var(--translate-x))rotate(-105deg);
+  }
+}
+@keyframes jest {
+  0% {
+    transform: translate(-50%, -50%) rotate(-280.5deg) translateX(var(--translate-x)) rotate(280.5deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(79.5deg) translateX(var(--translate-x))rotate(-79.5deg);
+  }
+}
+@keyframes mocha {
+  0% {
+    transform: translate(-50%, -50%) rotate(-306deg) translateX(var(--translate-x)) rotate(306deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(54deg) translateX(var(--translate-x))rotate(-54deg);
+  }
+}
+@keyframes figma {
+  0% {
+    transform: translate(-50%, -50%) rotate(-331.5deg) translateX(var(--translate-x)) rotate(331.5deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(28.5deg) translateX(var(--translate-x))rotate(-28.5deg);
   }
 }
 
