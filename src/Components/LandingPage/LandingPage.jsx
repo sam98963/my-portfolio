@@ -13,9 +13,15 @@ export default function LandingPage(){
         </article>
         <article className="flex-col items-center flex-grow flex lg:flex-row-reverse">
           <LogoAnimation />
-          <div className="flex lg:flex-grow lg:self-end items-center mb-4 md:mt-0 lg:mt-12 md:mt-24 text-xl sm:text-2xl md:text-4xl sm:text-3xl">
-            <i className="devicon-github-original p-2 sm:p-4"></i>
-            <h2 className="">Check out my GitHub here!</h2>
+          <div className="flex lg:flex-grow lg:self-end items-center mb-4 md:mt-6 lg:mt-12 md:mt-24 text-xl sm:text-2xl md:text-4xl sm:text-3xl">
+            <a  href="https://github.com/sam98963" rel="noreferrer" target="_blank"  className="flex group cursor-pointer">
+              <div className="group-hover:text-fifth">
+                <i className="devicon-github-original p-2 sm:p-4"></i>
+              </div>
+              <div className="group-hover:text-fifth">
+                <h2 className="transition-colors duration-300 ease-in-out relative">Check out my GitHub here!<span className="absolute left-0 w-0 h-1 bg-fifth transition-width duration-300 ease-in-out group-hover:w-full"></span></h2>
+              </div>
+            </a>
           </div>
         </article>
       </section>
