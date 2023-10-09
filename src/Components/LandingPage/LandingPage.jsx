@@ -2,7 +2,7 @@ import Header from "../Header/Header"
 import LogoAnimation from "../LogoAnimation/LogoAnimation"
 export default function LandingPage(){
   return(
-    <main className="h-screen w-screen bg-gradient-to-tr from-primary via-forth to-tertiary text-secondary flex flex-col">
+    <main className="h-fit md:h-screen w-screen bg-gradient-to-tr from-primary via-forth to-tertiary text-secondary flex flex-col">
       <Header />
       <section className="w-full h-full flex flex-col text-start sm:p-15 p-5 sm:p-10 md:pt-10">
         <article>
@@ -11,11 +11,11 @@ export default function LandingPage(){
             Samuel Williamson
           </h1>
         </article>
-        <article className="flex-col items-center flex-grow flex md:flex-row-reverse">
+        <article className="flex-col items-center flex-grow flex lg:flex-row-reverse">
           <LogoAnimation />
-          <div className="flex flex-grow md:self-end items-center md:mt-24">
-            <i className="devicon-github-original p-2"></i>
-            <h2>Check out my GitHub here!</h2>
+          <div className="flex lg:flex-grow lg:self-end items-center mb-4 md:mt-0 lg:mt-12 md:mt-24 text-xl sm:text-2xl md:text-4xl sm:text-3xl">
+            <i className="devicon-github-original p-2 sm:p-4"></i>
+            <h2 className="">Check out my GitHub here!</h2>
           </div>
         </article>
       </section>

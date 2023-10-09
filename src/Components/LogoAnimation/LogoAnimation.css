@@ -2,8 +2,10 @@
   background-image: url("../../assets/Logo/shadesFace.png");
   background-size: cover;
   background-position: center center;
-  --translate-x: 220px;
+  --translate-x: 240px;
   --spin-time: 15s;
+  --width: 6rem;
+  --height: 6rem;
 }
 
 
@@ -20,6 +22,8 @@
   animation: goggles var(--spin-time) linear infinite ;
   top: 50%;
   left: 50%;
+  width: var(--width);
+  height: var(--height);
 }
 
 #guitar {
@@ -29,6 +33,8 @@
   animation: guitar var(--spin-time) linear infinite;
   top: 50%;
   left: 50%;
+  width: var(--width);
+  height: var(--height);
 }
 
 #football {
@@ -38,6 +44,8 @@
   animation: football var(--spin-time) linear infinite;
   top: 50%;
   left: 50%;
+  width: var(--width);
+  height: var(--height);
 }
 
 #trumpet {
@@ -47,6 +55,8 @@
   animation: trumpet var(--spin-time) linear infinite;
   top: 50%;
   left: 50%;
+  width: var(--width);
+  height: var(--height);
 }
 
 #bike {
@@ -56,6 +66,8 @@
   animation: bike var(--spin-time) linear infinite;
   top: 50%;
   left: 50%;
+  width: var(--width);
+  height: var(--height);
 }
 
 @keyframes guitar {
@@ -99,13 +111,39 @@
   }
 }
 
-
+/* Before sm */
 @media screen and (max-width: 767px) {
   #avatar {
     background-image: url("../../assets/Logo/shadesFace.png");
     background-size: cover;
     background-position: center center;
-    --translate-x: 150px;
+    --translate-x: 160px;
     --spin-time: 10s;
+    --width: 4rem;
+    --height: 4rem;
+  }
+}
+/* Sm */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #avatar {
+    background-image: url("../../assets/Logo/shadesFace.png");
+    background-size: cover;
+    background-position: center center;
+    --translate-x: 190px;
+    --spin-time: 10s;
+    --width: 5rem;
+    --height: 5rem;
+  }
+}
+/* Md */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  #avatar {
+    background-image: url("../../assets/Logo/shadesFace.png");
+    background-size: cover;
+    background-position: center center;
+    --translate-x: 220px;
+    --spin-time: 12s;
+    --width: 6rem;
+    --height: 6rem;
   }
 }
