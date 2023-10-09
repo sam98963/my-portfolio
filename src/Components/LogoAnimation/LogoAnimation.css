@@ -2,7 +2,8 @@
   background-image: url("../../assets/Logo/shadesFace.png");
   background-size: cover;
   background-position: center center;
-  --translate-x: 65px;
+  --translate-x: 220px;
+  --spin-time: 15s;
 }
 
 
@@ -16,7 +17,7 @@
   background-image: url("../../assets/Logo/OrbitItems/goggles.PNG");
   background-size: cover;
   background-position: center center;
-  animation: goggles 9s linear infinite ;
+  animation: goggles var(--spin-time) linear infinite ;
   top: 50%;
   left: 50%;
 }
@@ -25,7 +26,7 @@
   background-image: url("../../assets/Logo/OrbitItems/guitar.PNG");
   background-size: cover;
   background-position: center center;
-  animation: guitar 9s linear infinite;
+  animation: guitar var(--spin-time) linear infinite;
   top: 50%;
   left: 50%;
 }
@@ -34,7 +35,7 @@
   background-image: url("../../assets/Logo/OrbitItems/football.PNG");
   background-size: cover;
   background-position: center center;
-  animation: football 9s linear infinite;
+  animation: football var(--spin-time) linear infinite;
   top: 50%;
   left: 50%;
 }
@@ -43,7 +44,7 @@
   background-image: url("../../assets/Logo/OrbitItems/trumpet.png");
   background-size: cover;
   background-position: center center;
-  animation: trumpet 9s linear infinite;
+  animation: trumpet var(--spin-time) linear infinite;
   top: 50%;
   left: 50%;
 }
@@ -52,7 +53,7 @@
   background-image: url("../../assets/Logo/OrbitItems/bike.png");
   background-size: cover;
   background-position: center center;
-  animation: bike 9s linear infinite;
+  animation: bike var(--spin-time) linear infinite;
   top: 50%;
   left: 50%;
 }
@@ -104,6 +105,7 @@
     background-image: url("../../assets/Logo/shadesFace.png");
     background-size: cover;
     background-position: center center;
-    --translate-x: 40px;
+    --translate-x: 150px;
+    --spin-time: 10s;
   }
 }

@@ -1,7 +1,7 @@
 import "./LogoAnimation.css"
 export default function LogoAnimation(){
   return(
-    <div id = "avatar" className="mx-8 sm:mx-16 h-12 sm:h-24 w-12 sm:w-24 rounded-full border-2 border-white relative mt-6 sm:mt-12">
+    <div id = "avatar" className="mx-8 sm:mx-16 h-64 md:h-72 lg:h-96 w-64 md:w-72 lg:w-96 rounded-full border-2 border-white relative mt-12 sm:mt-16">
       <div id="goggles" className=" w-8 h-8 rounded-full">
         <div>
 
