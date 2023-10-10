@@ -36,7 +36,8 @@ export default {
         "4xs": "0.5rem"
       },
       height: {
-        "88": "22rem"
+        "88": "22rem",
+        "108": "26rem"
       },
       width: {
         "88": "22rem"
