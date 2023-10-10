@@ -50,7 +50,7 @@ export default function Contact(){
 
   return(
     <>
-    <main id="contact" className="w-screen h-auto sm:h-screen flex md:items-center justify-center bg-gradient-to-br from-primary via-forth to-tertiary text-white pt-10 lg:pt-0 relative">
+    <main id="contact" className="w-screen h-auto sm:h-screen flex md:items-center justify-center bg-gradient-to-tr from-primary via-forth to-tertiary text-white pt-10 lg:pt-0 relative">
     <FormSubmitModal setIsModalVisible={setIsModalVisible} isModalVisible={isModalVisible}/>
       <section className="w-4/5 sm:h-4/5 h-3/5 flex flex-col sm:text-md text-sm">
         <h1 className="sm:text-8xl text-6xl text-center sm:text-start">Contact Me</h1>

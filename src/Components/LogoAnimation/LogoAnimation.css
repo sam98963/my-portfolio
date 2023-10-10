@@ -4,16 +4,15 @@
   background-position: center center;
   --translate-x: 240px;
   --spin-time: 15s;
-  --width: 6rem;
-  --height: 6rem;
+  --width: 4.5rem;
+  --height: 4.5rem;
   
 }
 
 
 
-#html, #css, #javascript, #typescript, #react, #java, #spring, #express, #postgresql, #git, #github, #jest, #mocha, #figma {
+#html, #css, #javascript, #typescript, #react, #java, #spring, #express, #postgresql, #git, #github, #jest, #mocha, #figma{
   position: absolute;
-  border-radius: 50%;
   background-size: cover;
   background-position: center center;
   top: 50%;
@@ -23,63 +22,63 @@
 }
 
 #html {
-  background-image: url("../../assets/Logo/OrbitItems/goggles.PNG");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg");
   animation: html var(--spin-time) linear infinite ;
 }
 
 #css {
-  background-image: url("../../assets/Logo/OrbitItems/guitar.PNG");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg");
   animation: css var(--spin-time) linear infinite;
 }
 
 #javascript {
-  background-image: url("../../assets/Logo/OrbitItems/football.PNG");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg");
   animation: javascript var(--spin-time) linear infinite;
 }
 
 #typescript {
-  background-image: url("../../assets/Logo/OrbitItems/trumpet.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg");
   animation: typescript var(--spin-time) linear infinite;
 }
 
 #react {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg");
   animation: react var(--spin-time) linear infinite;
 }
 #java {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg");
   animation: java var(--spin-time) linear infinite;
 }
 #spring {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg");
   animation: spring var(--spin-time) linear infinite;
 }
 #express {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg");
   animation: express var(--spin-time) linear infinite;
 }
 #postgresql {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg");
   animation: postgresql var(--spin-time) linear infinite;
 }
 #git {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg");
   animation: git var(--spin-time) linear infinite;
 }
 #github {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
   animation: github var(--spin-time) linear infinite;
 }
 #jest {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg");
   animation: jest var(--spin-time) linear infinite;
 }
 #mocha {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg");
   animation: mocha var(--spin-time) linear infinite;
 }
 #figma {
-  background-image: url("../../assets/Logo/OrbitItems/bike.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg");
   animation: figma var(--spin-time) linear infinite;
 }
 
@@ -204,8 +203,8 @@
     background-position: center center;
     --translate-x: 160px;
     --spin-time: 10s;
-    --width: 4rem;
-    --height: 4rem;
+    --width: 3rem;
+    --height: 3rem;
   }
 }
 /* Sm */
@@ -216,8 +215,8 @@
     background-position: center center;
     --translate-x: 190px;
     --spin-time: 10s;
-    --width: 5rem;
-    --height: 5rem;
+    --width: 3.5rem;
+    --height: 3.5rem;
   }
 }
 /* Md */
@@ -228,7 +227,7 @@
     background-position: center center;
     --translate-x: 220px;
     --spin-time: 12s;
-    --width: 6rem;
-    --height: 6rem;
+    --width: 4rem;
+    --height: 4rem;
   }
 }
