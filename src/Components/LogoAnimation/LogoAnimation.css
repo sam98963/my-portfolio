@@ -213,7 +213,7 @@
     background-image: url("../../assets/Logo/shadesFace.png");
     background-size: cover;
     background-position: center center;
-    --translate-x: 190px;
+    --translate-x: 175px;
     --spin-time: 10s;
     --width: 3.5rem;
     --height: 3.5rem;

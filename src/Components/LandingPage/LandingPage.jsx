@@ -6,8 +6,8 @@ export default function LandingPage(){
       <Header />
       <section className="w-full h-full flex flex-col text-start sm:p-15 p-5 sm:p-10 md:pt-10">
         <article>
-          <h3 className="sm:text-4xl md:text-3xl text-2xl w-4/5">Musician, Triathlete and <span className="underline underline-offset-6 text-tertiary">Developer.</span></h3>
-          <h1 className="sm:text-7xl md:text-9xl text-4xl w-full font-medium">
+          <h3 className="sm:text-2xl md:text-3xl lg:text-4xl text-2xl w-4/5">Musician, Triathlete and <span className="underline underline-offset-6 text-tertiary">Developer.</span></h3>
+          <h1 className="sm:text-6xl md:text-7xl lg:text-8xl text-4xl w-full font-medium">
             Samuel Williamson
           </h1>
         </article>

@@ -16,8 +16,11 @@ export default {
       boxShadow: {
         'input': '0 0 12px rgba(70, 150, 250, 0.8)',
         'button': '1px 1px 20px 1px rgba(70, 150, 250, 0.6)',
-        'button-hover': '1px 1px 30px 1px rgba(70, 150, 250, 0.8)'
-      },
+        'button-small': '1px 1px 10px 1px rgba(70, 150, 250, 0.6)',
+        'button-hover': '1px 1px 30px 1px rgba(70, 150, 250, 0.8)',
+        'button-small-hover': '1px 1px 15px 1px rgba(70, 150, 250, 0.8)',
+    }
+    ,
       dropShadow: {
         "input": '0 0 8px rgba(70, 150, 250, 0.6)',
       },
@@ -36,10 +39,15 @@ export default {
         "4xs": "0.5rem"
       },
       height: {
-        "88": "22rem"
+        "88": "22rem",
+        "120": "20rem",
+        "7/8": "87.5%"
       },
       width: {
-        "88": "22rem"
+        "88": "22rem",
+        "12/13": "93%",
+        "120": "28rem",
+        "144": "32rem",
       }
     },
   },
