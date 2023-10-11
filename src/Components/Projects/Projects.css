@@ -1,0 +1,120 @@
+.smlbtn.portfolio{
+  transition: transform 0.1s;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px 1px rgba(70, 150, 250, 0.6);
+  transition: box-shadow 0.8s ease;
+}
+
+.smlbtn.portfolio:hover{
+  box-shadow: 5px 5px 25px 5px rgba(70, 150, 250, 0.9);
+}
+.smlbtn.three{
+  transition: transform 0.1s;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px 1px rgba(249,191,197, 0.75);
+  transition: box-shadow 0.8s ease;
+}
+
+.smlbtn.three:hover{
+  box-shadow: 5px 5px 25px 5px rgba(249,191,197, 0.9);
+}
+.smlbtn.mmm{
+  transition: transform 0.1s;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px 1px rgba(204,102,255,0.7);
+  transition: box-shadow 0.8s ease;
+}
+
+.smlbtn.mmm:hover{
+  box-shadow: 5px 5px 25px 5px rgba(204,102,255,0.9);
+}
+.smlbtn.lyra{
+  transition: transform 0.1s;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px 1px rgba(172,111,3,0.7);
+  transition: box-shadow 0.8s ease;
+}
+
+.smlbtn.lyra:hover{
+  box-shadow: 5px 5px 25px 5px rgba(172,111,3,0.9);
+}
+
+.three span{
+ position: relative;
+ pointer-events: none;
+ color: rgba(249,191,197, 1);
+ transition: 0.5s;
+}
+.mmm span{
+ position: relative;
+ pointer-events: none;
+ color: rgba(204,102,255,1);
+ transition: 0.5s;
+}
+.lyra span{
+ position: relative;
+ pointer-events: none;
+ color: rgba(172,111,3,1);
+ transition: 0.5s;
+}
+.portfolio span{
+ position: relative;
+ pointer-events: none;
+ color: #4696fa;
+ transition: 0.5s;
+}
+
+.smlbtn:hover span{
+  color: #f5efff;
+}
+
+.portfolio::before{
+  content: '';
+  position: absolute;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  transform: translate(-50%,-50%);
+  background: var(--clr, #4696fa);
+  width: 0;
+  height: 0;
+  transition: 0.8s, left 0s, top 0s;
+}
+.lyra::before{
+  content: '';
+  position: absolute;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  transform: translate(-50%,-50%);
+  background: var(--clr, rgba(172,111,3,1));
+  width: 0;
+  height: 0;
+  transition: 0.8s, left 0s, top 0s;
+}
+.mmm::before{
+  content: '';
+  position: absolute;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  transform: translate(-50%,-50%);
+  background: var(--clr, rgba(204,102,255,1));
+  width: 0;
+  height: 0;
+  transition: 0.8s, left 0s, top 0s;
+}
+.three::before{
+  content: '';
+  position: absolute;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  transform: translate(-50%,-50%);
+  background: var(--clr, rgba(249,191,197, 1));
+  width: 0;
+  height: 0;
+  transition: 0.8s, left 0s, top 0s;
+}
+
+.smlbtn:hover::before{
+    width: 80%;
+    height: 100%;
+    border-radius: 1.5rem;
+}
