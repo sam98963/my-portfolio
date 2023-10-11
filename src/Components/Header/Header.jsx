@@ -13,19 +13,21 @@ export default function Header() {
         </p>
         <p className="relative group">
           <a
-            href="#about"
+            href="#contact"
             className="hover:text-fifth transition-colors duration-300 ease-in-out"
           >
-            About
+            Contact
             <span className="absolute left-0 w-0 h-1 bg-fifth transition-width duration-300 ease-in-out group-hover:w-full"></span>
           </a>
         </p>
         <p className="relative group">
           <a
-            href="#contact"
+            href="https://medium.com/@szwilliamson01"
+            target="_blank"
+            rel="noreferrer"
             className="hover:text-fifth transition-colors duration-300 ease-in-out"
           >
-            Contact
+            Blog
             <span className="absolute left-0 w-0 h-1 bg-fifth transition-width duration-300 ease-in-out group-hover:w-full"></span>
           </a>
         </p>
