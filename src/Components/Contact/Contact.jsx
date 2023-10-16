@@ -9,13 +9,34 @@ import FormSubmitModal from "../FormSubmitModal/FormSubmitModal";
 export default function Contact(){
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-
-
   const [emailData, setEmailData] = useState({
     fromName: "",
     fromEmail: "",
     fromMessage: ""
   });
+
+  function validateEmail(email){
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+  }
+
+  function validateForm(mail){
+    if(mail.fromName.trim() == ""){
+      alert("Please enter your name.")
+      return false
+    } 
+
+    if(mail.fromMessage.trim() == ""){
+      alert("Please enter a message.")
+      return false
+    } 
+
+    if(!validateEmail(mail.fromEmail)){
+      alert("Please enter a valid email.")
+      return false
+    }
+    return true
+  }
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -30,6 +51,8 @@ export default function Contact(){
       fromName: emailData.fromName,
       fromMessage: emailData.fromMessage,
     }
+
+    if(validateForm(mail)){
       // console.log("fetch attempt")
       const response = await fetch("https://wilzo-portfolio-server.onrender.com/contact", {
         method: 'POST',
@@ -44,6 +67,7 @@ export default function Contact(){
         console.error('Request failed:', response.status, response.statusText);
       }
     }
+  }
 
 
 
