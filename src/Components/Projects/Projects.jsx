@@ -1,6 +1,6 @@
 import lyra from "../../assets/Lyra.png"
 import mmm from "../../assets/MMM.png"
-import portfolio from "../../assets/Portfolio2.png"
+import portfolio from "../../assets/portfolio2.png"
 import three from "../../assets/ThreeRedesign.png"
 import "./Projects.css"
 
