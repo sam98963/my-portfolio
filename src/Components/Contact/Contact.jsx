@@ -1,9 +1,4 @@
 import "./Contact.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faEnvelope,
-  faPhone
-} from "@fortawesome/free-solid-svg-icons";
 import {useState} from "react"
 import FormSubmitModal from "../FormSubmitModal/FormSubmitModal";
 export default function Contact(){
@@ -83,11 +78,10 @@ export default function Contact(){
             <div>
             <h3 className=" text-2xl sm:text-4xl md:text-5xl text-center sm:text-start flex flex-col items-center sm:items-start">Lets build something unforgettable <span className="block text-4xl sm:text-6xl md:text-8xl border-b-4 border-white w-fit">together.</span></h3>
             </div>
-            <figure className="sm:self-start mt-5 pt-2 sm:text-2xl text-lg md:text-3xl items-center flex justify-between w-2/5">
-            <a href="https://www.linkedin.com/in/samwilliamson2918/" rel="noreferrer" target="_blank" className="transform scale-100 hover:scale-110 transition-transform duration-200"><i className="devicon-linkedin-plain"></i></a>
-              <a href = "https://twitter.com/WilzoCodes" rel="noreferrer" target="_blank" className="transform scale-100 hover:scale-110 transition-transform duration-200"><i className="devicon-twitter-original"></i></a>
-              <a href = "mailto: wilzocodes01@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="transform scale-100 hover:scale-110 transition-transform duration-200"/></a>
-              <a href = "tel:+447580367311"><FontAwesomeIcon icon={faPhone} className="transform scale-100 hover:scale-110 transition-transform duration-200" /></a>
+            <figure className="sm:self-start mt-5 pt-2 sm:text-2xl text-lg md:text-3xl items-center justify-center lg:justify-start flex  w-4/5 lg:w-3/5">
+              <p className="lg:ml-2">I&apos;m also here:</p>
+              <a href="https://www.linkedin.com/in/samwilliamson2918/" rel="noreferrer" target="_blank" className="transform scale-100 hover:scale-110 transition-transform duration-200 px-2"><i className="devicon-linkedin-plain"></i></a>
+              <a href = "https://twitter.com/WilzoCodes" rel="noreferrer" target="_blank" className="transform scale-100 hover:scale-110 transition-transform duration-200 px-2"><i className="devicon-twitter-original"></i></a>
             </figure>
           </article>
           <form className="flex-1 flex flex-col px-5 items-center sm:text-lg py-10 md:pt-0 w-full">

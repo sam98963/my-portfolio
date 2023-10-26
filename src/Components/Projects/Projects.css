@@ -11,12 +11,12 @@
 .smlbtn.three{
   transition: transform 0.1s;
   overflow: hidden;
-  box-shadow: 1px 1px 15px 1px rgba(249,191,197, 0.75);
+  box-shadow: 1px 1px 15px 1px rgba(229, 171, 177, .65);
   transition: box-shadow 0.8s ease;
 }
 
 .smlbtn.three:hover{
-  box-shadow: 5px 5px 25px 5px rgba(249,191,197, 0.9);
+  box-shadow: 5px 5px 25px 5px rgba(229, 171, 177, .8);;
 }
 .smlbtn.mmm{
   transition: transform 0.1s;
@@ -42,7 +42,7 @@
 .three span{
  position: relative;
  pointer-events: none;
- color: rgba(249,191,197, 1);
+ color: rgba(229, 171, 177, 1);
  transition: 0.5s;
 }
 .mmm span{
@@ -107,7 +107,7 @@
   left: var(--x, 50%);
   top: var(--y, 50%);
   transform: translate(-50%,-50%);
-  background: var(--clr, rgba(249,191,197, 1));
+  background: var(--clr, rgba(229, 171, 177, 1));
   width: 0;
   height: 0;
   transition: 0.8s, left 0s, top 0s;
